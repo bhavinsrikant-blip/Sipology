@@ -3,7 +3,7 @@ const loginPanel=document.querySelector('#login-panel'), dashboard=document.quer
 const byId=id=>document.getElementById(id); let currentItems=[];
 if(!supabaseConfigured){loginMsg.textContent='Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY, then redeploy.';loginForm.querySelector('button').disabled=true;}
 function showDashboard(on){loginPanel.hidden=on;dashboard.hidden=!on;}
-async function verifyAdmin(session){ if(!session){showDashboard(false);return;} const {data,error}=await supabase.from('admin_users').select('user_id').eq('user_id',session.user.id).maybeSingle(); if(error||!data){await supabase.auth.signOut();showDashboard(false);loginMsg.textContent='This account is not authorized as an admin.';return;} showDashboard(true);await loadProfile();await loadItems(); }
+async function verifyAdmin(session){ if(!session){showDashboard(false);return;} const {data,error}=await supabase.from('sipology_admins').select('user_id').eq('user_id',session.user.id).maybeSingle(); if(error||!data){await supabase.auth.signOut();showDashboard(false);loginMsg.textContent='This account is not authorized as an admin.';return;} showDashboard(true);await loadProfile();await loadItems(); }
 supabase?.auth.getSession().then(({data})=>verifyAdmin(data.session));
 supabase?.auth.onAuthStateChange((_event,session)=>{verifyAdmin(session);});
 loginForm.addEventListener('submit',async e=>{e.preventDefault();loginMsg.textContent='Signing in…';const {error}=await supabase.auth.signInWithPassword({email:byId('email').value,password:byId('password').value});loginMsg.textContent=error?error.message:'';});
