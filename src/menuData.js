@@ -1,0 +1,14 @@
+export const fallbackMenu = [
+  {name:'Brown Sugar Latte',description:'Double espresso, oat milk, brown sugar',category:'coffee',price:220,image_url:'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85',tag:'HOUSE FAVOURITE',active:true},
+  {name:'Butter Croissant',description:'Golden, flaky, baked every morning',category:'bakery',price:120,image_url:'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Classic Cappuccino',description:'Rich espresso, silky steamed milk',category:'coffee',price:180,image_url:'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Country Sourdough',description:'Slow-fermented, crisp crust, soft centre',category:'bakery',price:220,image_url:'https://images.unsplash.com/photo-1608198093002-ad4e005484e1?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Avocado Toast',description:'Whipped feta, chilli oil, sourdough',category:'plates',price:320,image_url:'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Chocolate Croissant',description:'Dark chocolate tucked in buttery layers',category:'bakery',price:150,image_url:'https://images.unsplash.com/photo-1606313564200-e75d5e304c76?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Double Espresso',description:'Our rotating single-origin house shot',category:'coffee',price:130,image_url:'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Berry & Granola Bowl',description:'Greek yoghurt, seasonal fruit, house granola',category:'plates',price:280,image_url:'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Flat White',description:'Velvety microfoam over a double shot',category:'coffee',price:190,image_url:'https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Hot Chocolate',description:'Slow-melted chocolate, steamed milk',category:'drinks',price:210,image_url:'https://images.unsplash.com/photo-1542990253-0b8be9e2e8f2?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Matcha Latte',description:'Japanese matcha whisked with milk',category:'drinks',price:240,image_url:'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=85',tag:'',active:true},
+  {name:'Grilled Cheese',description:'Toasted sourdough, melting cheese',category:'plates',price:260,image_url:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=85',tag:'',active:true}
+];
